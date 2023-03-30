@@ -1,0 +1,137 @@
+/* general */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  background-image: url(./assets/hogwartsbackground.jpg);
+  background-color: black;
+  background-size: 100%;
+  background-repeat: repeat;
+  color: white;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  margin-top: 48px;
+}
+.page__header {
+  width: 100%;
+  font-size: 48px;
+}
+
+/* navbar */
+.MUI__menu--item {
+  text-decoration: none;
+  color: #000000de;
+}
+
+/* hero page */
+
+#hero__section {
+  margin-top: 48px;
+}
+
+.hero__header {
+  margin: 48px;
+}
+
+.hero__subheader {
+  margin-bottom: 16px;
+}
+
+.hero__item--card {
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 16px;
+}
+
+.MuiPaper-root .hero__card--content{
+  height: 265px;
+}
+/* houses */
+
+.trait__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+#scarletgold {
+  background-color: red;
+  background-image: linear-gradient(180deg, #f3ec78, #af4261);
+  background-size: 100%;
+  background-repeat: repat;
+  
+}
+#bluebronze {
+  background-color: red;
+  background-image: linear-gradient(0deg, #222f5b, #946b2d);
+  background-size: 100%;
+  background-repeat: repat;
+  
+}
+#yellowblack {
+  background-color: red;
+  background-image: linear-gradient(180deg, #ecb939, #372e29);
+  background-size: 100%;
+  background-repeat: repat;
+  
+}
+#greensilver {
+  background-color: red;
+  background-image: linear-gradient(180deg, #1a472a, #5d5d5d);
+  background-size: 100%;
+  background-repeat: repat;
+  
+}
+.trait__list--item {
+  /* border: 1px solid black; */
+  margin-right: 8px;
+}
+
+
+/* spells */
+.MuiPaper-root .spell__card--content {
+  height: 190px;
+}
+
+.spell__form {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.search-bar {
+  margin-right: 24px;
+  padding: 4px;
+}
+
+.selections {
+  margin-right: 16px;
+  padding: 4px;
+}
+
+/* spells pagination */
+
+.spell__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 8px auto;
+
+  background-color: #121212;
+
+}
