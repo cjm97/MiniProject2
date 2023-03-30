@@ -21,7 +21,7 @@ export default function SpellPagination({
           count={totalPages}
           page={currentPage}
           onChange={handlePageChange}
-          class="spell__pagination"
+          className="spell__pagination"
         />
       </Stack>
     </div>

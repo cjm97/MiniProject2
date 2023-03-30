@@ -67,8 +67,8 @@ export default function SpellList() {
   return (
     <>
       <h1 className="page__header">Spells</h1>
-      <form className="spell__form">
-        <Box component="form" sx={{ minWidth: 300 }} noValidate autoComplete="off">
+      <div className="spell__form">
+        <Box component="form" sx={{ minWidth: 300 }} noValidate autoComplete="on" >
           <TextField
             id="spell__search"
             label="Search by name..."
@@ -95,7 +95,7 @@ export default function SpellList() {
             </Select>
           </FormControl>
         </Box>
-      </form>
+      </div>
       {currentSpells.map((spell) => (
         <Grid item xs={12} sm={6} md={3} key={spell.id} className="spell__list--container">
           <Card sx={{ maxWidth: 345 }}>
