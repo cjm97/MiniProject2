@@ -97,7 +97,7 @@ export default function SpellList() {
         </Box>
       </form>
       {currentSpells.map((spell) => (
-        <Grid item xs={12} sm={6} md={3} key={spell.id}>
+        <Grid item xs={12} sm={6} md={3} key={spell.id} className="spell__list--container">
           <Card sx={{ maxWidth: 345 }}>
             <CardMedia
               component="img"

@@ -31,7 +31,8 @@ html {
 /* navbar */
 .MUI__menu--item {
   text-decoration: none;
-  color: #000000de;
+  color: #fff;
+  
 }
 
 /* hero page */
@@ -131,7 +132,15 @@ html {
   align-items: center;
   width: 60%;
   margin: 8px auto;
-
   background-color: #121212;
+}
 
+.spell__pagination--wrapper {
+  width: 100%;
+}
+
+.spell__list--container {
+display: flex;
+justify-content: center;
+align-items: center;
 }

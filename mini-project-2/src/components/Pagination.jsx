@@ -11,13 +11,19 @@ export default function SpellPagination({
     onPageChange(value);
   };
   return (
-    <Stack alignItems="center" justifyContent="center" className="spell__pagination">
-      <Pagination
-        count={totalPages}
-        page={currentPage}
-        onChange={handlePageChange}
-        class="spell__pagination"
-      />
-    </Stack>
+    <div className="spell__pagination--wrapper">
+      <Stack
+        alignItems="center"
+        justifyContent="center"
+        className="spell__pagination"
+      >
+        <Pagination
+          count={totalPages}
+          page={currentPage}
+          onChange={handlePageChange}
+          class="spell__pagination"
+        />
+      </Stack>
+    </div>
   );
 }
