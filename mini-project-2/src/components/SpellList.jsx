@@ -64,6 +64,10 @@ export default function SpellList() {
     setCurrentPage(page);
   };
 
+  const separateWords = (str) => {
+    return str.replace(/([a-z])([A-Z])/, '$1 $2');
+  }
+
   return (
     <>
       <h1 className="page__header">Spells</h1>
@@ -113,51 +117,7 @@ export default function SpellList() {
                 {spell.incantation}
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                {spell.type === "DarkCharm"
-                  ? `${spell.type.replace(
-                      "DarkCharm",
-                      "Dark Charm"
-                    )} type spell: ${spell.effect}`
-                  : spell.type === "HealingSpell"
-                  ? `${spell.type.replace(
-                      "HealingSpell",
-                      "Healing Spell"
-                    )} type spell: ${spell.effect}`
-                  : spell.type === "Spell"
-                  ? `Type: ${spell.type}. General spell. ${spell.effect}`
-                  : spell.type === "DarkArts"
-                  ? `${spell.type.replace(
-                      "DarkArts",
-                      "Dark Arts"
-                    )} type spell: ${spell.effect}`
-                  : spell.type === "CounterCharm"
-                  ? `${spell.type.replace(
-                      "CounterCharm",
-                      "Counter Charm"
-                    )} type spell: ${spell.effect}`
-                  : spell.type === "None"
-                  ? `Unknown spell type. ${spell.effect}.`
-                  : spell.type === "CounterJinx"
-                  ? `${spell.type.replace(
-                      "CounterJinx",
-                      "Counter Jinx"
-                    )} type spell: ${spell.effect}`
-                  : spell.type === "CounterSpell"
-                  ? `${spell.type.replace(
-                      "CounterSpell",
-                      "Counter Spell"
-                    )} type spell: ${spell.effect}`
-                  : spell.type === "MagicalTransportation"
-                  ? `${spell.type.replace(
-                      "MagicalTransportation",
-                      "Magical Transportation"
-                    )} type spell: ${spell.effect}`
-                  : spell.type === "BindingMagicalContract"
-                  ? `${spell.type.replace(
-                      "BindingMagicalContract",
-                      "Binding Magical Contract"
-                    )} type spell: ${spell.effect}`
-                  : `${spell.type} type spell: ${spell.effect}`}
+                {separateWords(spell.type)} Type Spell: {spell.effect}
               </Typography>
             </CardContent>
           </Card>
